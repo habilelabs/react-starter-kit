@@ -5,7 +5,7 @@
  */
 import { defineMessages } from 'react-intl';
 
-export const scope = 'react-starter-kit.containers.LocaleToggle';
+export const scope = 'src.containers.LocaleToggle';
 
 export default defineMessages({
   en: {

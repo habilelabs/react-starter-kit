@@ -5,7 +5,7 @@
  */
 import { defineMessages } from 'react-intl';
 
-export const scope = 'react-starter-kit.containers.HomePage';
+export const scope = 'src.containers.HomePage';
 
 export default defineMessages({
   startProjectHeader: {

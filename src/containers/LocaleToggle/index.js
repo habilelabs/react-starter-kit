@@ -12,9 +12,11 @@ import { createSelector } from 'reselect';
 import Toggle from 'components/Toggle';
 import Wrapper from './Wrapper';
 import messages from './messages';
-import { appLocales } from '../../i18n';
 import { changeLocale } from '../LanguageProvider/actions';
 import { makeSelectLocale } from '../LanguageProvider/selectors';
+
+// HACK: npm run build gives error for import
+const { appLocales } = require('../../i18n');
 
 export function LocaleToggle(props) {
   return (

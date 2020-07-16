@@ -6,7 +6,7 @@
  */
 
 // Needed for redux-saga es6 generator support
-import '@babel/polyfill';
+// import '@babel/polyfill';
 
 // Import all the third party stuff
 import React from 'react';
@@ -23,10 +23,14 @@ import * as serviceWorker from './serviceWorker';
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
 
+// Import Error Boundary
+import ErrorBoundary from 'components/ErrorBoundary';
+
 import configureStore from './configureStore';
 
-// Import i18n messages
-import { translationMessages } from './i18n';
+// Import translation messages
+// HACK: npm run build gives error for import
+const { translationMessages } = require('./i18n');
 
 // Create redux store with history
 const initialState = {};
@@ -38,7 +42,9 @@ const render = messages => {
     <Provider store={store}>
       <LanguageProvider messages={messages}>
         <ConnectedRouter history={history}>
-          <App />
+          <ErrorBoundary>
+            <App />
+          </ErrorBoundary>
         </ConnectedRouter>
       </LanguageProvider>
     </Provider>,

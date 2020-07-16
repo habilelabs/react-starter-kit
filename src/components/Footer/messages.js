@@ -5,7 +5,7 @@
  */
 import { defineMessages } from 'react-intl';
 
-export const scope = 'react-starter-kit.components.Footer';
+export const scope = 'src.components.Footer';
 
 export default defineMessages({
   licenseMessage: {

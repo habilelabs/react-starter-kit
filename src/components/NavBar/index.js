@@ -17,7 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import ListIcon from '@material-ui/icons/List';
-import Logo from 'assets/habilelabs-logo.png';
+import Logo from 'assets/images/habilelabs-logo.png';
 import A from '../A';
 import Img from '../Img';
 import HeaderLink from '../HeaderLink';

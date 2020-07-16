@@ -5,7 +5,7 @@
  */
 import { defineMessages } from 'react-intl';
 
-export const scope = 'react-starter-kit.containers.NotFoundPage';
+export const scope = 'src.containers.NotFoundPage';
 
 export default defineMessages({
   header: {
