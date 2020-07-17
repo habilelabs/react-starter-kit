@@ -17,7 +17,7 @@ export const initialState = {
 
 /* eslint-disable default-case, no-param-reassign */
 const homeReducer = (state = initialState, action) =>
-  produce(state, draft => {
+  produce(state, (draft) => {
     switch (action.type) {
       case CHANGE_USERNAME:
         // Delete prefixed '@' from the github username
